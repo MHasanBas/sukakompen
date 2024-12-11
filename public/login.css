@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('img/login1.png'); /* Set your background image here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+.login-box {
+    width: 400px; /* Atur lebar sesuai kebutuhan */
+    margin: 100px auto; /* Pusatkan di tengah layar */
+}
+
+.card {
+    background: #ffffff44; /* Transparansi latar belakang */
+    border: none; /* Hapus border */
+    border-radius: 15px; /* Bulatkan sudut */
+    backdrop-filter: blur(10px); /* Blur efek di belakang */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.card-header {
+    border-bottom: none; /* Hapus border bawah */
+}
+
+.card-body {
+    padding: 20px; /* Tambahkan padding di dalam card */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Spasi antar input */
+}
+
+.input-group .form-control {
+    background: #ffffff44; /* Transparansi input */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Border transparan */
+    color: #fff; /* Warna teks */
+}
+
+.input-group .input-group-text {
+    background: rgba(255, 255, 255, 0.2); /* Transparansi ikon */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Border transparan */
+    color: #fff; /* Warna ikon */
+}
+
+.btn-primary {
+    background: #ffe60aee; /* Warna tombol dengan transparansi */
+    border: none; /* Hapus border */
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+    background: #ffc400f6; /* Warna tombol saat hover */
+}
+
+.login-box-msg {
+    color: #fff; /* Warna teks pesan login */
+}
+
+.error-text {
+    font-size: 0.9rem; /* Ukuran font untuk pesan error */
+}
+
+.card-header a {
+    color: #ffffff; /* Ganti dengan warna yang Anda inginkan untuk "SukaKompen" */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.card-header a:hover {
+    color: #ffc400; /* Ganti dengan warna saat hover */
+}
+
+.login-box-msg a {
+    color: #0d3d7c; /* Ganti dengan warna yang Anda inginkan untuk "Daftar Sekarang" */
+    text-decoration: underline; /* Menambahkan garis bawah pada link */
+}
+
+.login-box-msg a:hover {
+    color: #ffc400; /* Ganti dengan warna saat hover */
+}
+
+.card.card-outline.card-primary {
+    border-color: #ffc107;
+    margin: 0 20px;
+}
