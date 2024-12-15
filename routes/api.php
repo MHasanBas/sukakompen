@@ -18,6 +18,7 @@ use App\Http\Controllers\Api\APIApplyController;
 use App\Http\Controllers\Api\APIFileTugasMHSController;
 use App\Http\Controllers\Api\APINotifController;
 use App\Http\Controllers\Api\APIApprovalController;
+use App\Http\Controllers\Api\APICetakController;
 use App\Http\Controllers\Api\APIDownloadDosenController;
 
 // Authentication Routes
@@ -54,7 +55,6 @@ Route::post('/alpa', [APIAlpaController::class, 'index']);
 
 // Apply Routes
 Route::middleware('auth:api')->post('/apply', [APIApplyController::class, 'apply']);
-Route::get('/tugas/show', [APIApplyController::class, 'show']);
 Route::middleware('auth:api')->post('/apply_mahasiswa', [APIApplyController::class, 'index']);
 Route::post('/decline', [APIApplyController::class, 'decline']);
 Route::post('/acc', [APIApplyController::class, 'acc']);
@@ -74,6 +74,9 @@ Route::post('/terima', [APIApprovalController::class, 'terima']);
 Route::post('/upload', [APIFileTugasMHSController::class, 'upload']);
 Route::post('/download', [APIFileTugasMHSController::class, 'download']);
 Route::post('/download_tugas', [APIDownloadDosenController::class, 'download_tugas']);
+
+// pdf surat
+Route::post('/pdf', [APICetakController::class, 'index']);
 
 // Kompen Routes
 Route::middleware('auth:api')->post('/kompen', [APIKompenController::class, 'index']);
